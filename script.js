@@ -83,7 +83,10 @@ function buttonClicked() {
     if (currentPage == 3) {
 
         isCorrect = true;
+        buttonAllowed = false;
+        inputText = "";
         setTimeout(() => { goToPage(Number(inputText)) }, flashTime);
+        console.log("Switching from last page to page: " + Number(inputText));
 
     } else if (inputText == "reset") {
 
